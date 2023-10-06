@@ -1,0 +1,21 @@
+# mamba env create -f environment.yaml
+# mamba env update -f environment.yaml --prune
+# conda activate nanoGPT
+name: nanoGPT
+channels:
+  - https://aws-ml-conda.s3.us-west-2.amazonaws.com
+  - nvidia
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - pytorch=2.0.1
+  - pytorch-cuda=12.2
+  - torchvision
+  - torchaudio
+  - numpy
+  - transformers
+  - datasets
+  - tiktoken
+  - wandb
+  - tqdm
